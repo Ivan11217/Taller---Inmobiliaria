@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora Inmobiliaria</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Logo" style="width: 50px;">
+        </a>
+        <div class="navbar-center">
+            <a class="navbar-brand" href="index.html">Constructora Inmobiliaria</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nombre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cerrar Sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Menú de opciones -->
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">
+                                Acerca de
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Contenido principal -->
+            <main role="main" class="col-md-8 ml-sm-auto col-lg-8 px-4">
+                <!-- Jumbotron -->
+                <div class="jumbotron">
+                    <h1 class="display-4">Bienvenido a Constructora Inmobiliaria</h1>
+                    <p class="lead">Construimos tus sueños con calidad y seguridad.</p>
+                    <hr class="my-4">
+                    <p>Conoce más sobre nuestros proyectos y servicios.</p>
+                    <a class="btn btn-primary btn-lg" href="about.html" role="button">Aprende más</a>
+                </div>
+
+                <!-- Carousel -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/slide1.png" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/slide2.png" class="d-block w-100" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/slide3.png" class="d-block w-100" alt="Slide 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/slide4.png" class="d-block w-100" alt="Slide 4">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <!-- Gallery -->
+                <div class="mt-4">
+                    <h2>Galería de Proyectos</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img src="images/project1.png" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Urbanización Costa Di Vento">
+                                <div class="card-body">
+                                    <h5 class="card-title">Urbanización Costa Di Vento</h5>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project1Modal">Ver más</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img src="images/project2.png" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Urbanización Faro Novo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Urbanización Faro Novo</h5>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project2Modal">Ver más</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img src="images/project3.png" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Urbanización Ribera Paraiso">
+                                <div class="card-body">
+                                    <h5 class="card-title">Urbanización Ribera Paraiso</h5>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project3Modal">Ver más</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Servicios y enlaces externos -->
+            <aside class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h5>Servicios</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://pagos.ambiensa.info/">Paga aquí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://balcondeservicios.ambiensa.info/">Estado de cuenta</a>
+                        </li>
+                    </ul>
+                    <h5>Enlaces Externos</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr">Facebook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://twitter.com/?lang=es">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Modal for Project 1 -->
+    <div class="modal fade" id="project1Modal" tabindex="-1" role="dialog" aria-labelledby="project1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project1ModalLabel">Urbanización Costa Di Vento</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>COSTA DI VENTO ES UN NUEVO DESARROLLO DE MUNDO AMBIENSA QUE NACE DENTRO DEL MEGA Y EXITOSO PROYECTO MI CASA MI FUTURO.</p>
+                    <p>Podrás sentir la seguridad, el bienestar y el confort que tu familia merece, por todas las ventajas con la que se ha implementado en su desarrollo. Tendrá todo lo que necesitas a su alrededor: Centros comerciales, de salud, grandes supermercados, plazas comerciales, lugares de entretenimiento, entre otras cosas. Inclusive, las principales playas a pocas horas de su vivienda.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Project 2 -->
+    <div class="modal fade" id="project2Modal" tabindex="-1" role="dialog" aria-labelledby="project2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project2ModalLabel">Urbanización Faro Novo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>La perfecta ubicación de Faro Novo en el Km 19 de vía a la costa, le regala el confort de tener todo lo que necesita cerca de usted: Centros educativos, comerciales, de salud, lugares de entretenimiento, vías importantes de la ciudad entre otros.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Project 3 -->
+    <div class="modal fade" id="project3Modal" tabindex="-1" role="dialog" aria-labelledby="project3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project3ModalLabel">Urbanización Ribera Paraiso</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>TU CASA NUEVA EN EL CORAZÓN DE SAMBORONDÓN</p>
+                    <p>Es un proyecto inmobiliario qué estará ubicado en el sector sur de Tarifa en las orillas del Río Los Tintos. Este innovador proyecto brindará a sus residentes vivir en una urbanización privada.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3">
+            © 2024 Constructora Inmobiliaria. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    </script>
+</body>
+</html>
